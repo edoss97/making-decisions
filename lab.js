@@ -7,7 +7,13 @@
 */
 
 //CODE HERE
-
+let lovesCode = true
+console.log (lovesCode)
+if (lovesCode === true){
+  console.log("i love to code")
+}
+else {console.log("Coding has it's challenges")
+}
 // For problems 2-3 use the following lines of code:
 var amysAge = 29;
 var brittanisAge = 34;
@@ -21,6 +27,15 @@ var brittanisBirthYear = 1986;
 */
 
 //CODE HERE
+if (amysAge === brittanisAge)
+console.log("they are the same age")
+else { if(amysAge > brittanisAge)
+console.log("amy is older")
+else { if(brittanisAge > amysAge)
+console.log("brittany is older")}}
+
+
+
 
 ////////// PROBLEM 3 //////////
 
@@ -30,6 +45,9 @@ var brittanisBirthYear = 1986;
 
 //CODE HERE
 
+if(amysBirthYear === brittanisBirthYear)
+ {console.log ("Amy and britanny were born in the same year")
+} else {console.log("amy and brittany were not born in the same year")}
 ////////// PROBLEM 4 //////////
 
 let temperature = 55;
@@ -39,8 +57,23 @@ let rain = true;
   Using an if statement and a comparison operator, create code that will log a suggestion on what type of clothes one should wear for the day, based on the above temperature and rain.
   If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
 */
-
+clothingToWear = ""
 //CODE HERE
+if (temperature >= 80){
+if(rain === true){
+  clothingToWear = "a t shirt and umbrella"
+} else (clothingToWear = "t shirt")
+}if (temperature > 80 && temperature < 60){
+  if(rain === true){
+  clothingToWear = "a rain jacket"
+} else clothingToWear = "a jacket"}
+if (temperature <= 60){
+  if(rain === true){
+    clothingToWear = "wear a jacket and carry an umbrella"}
+    else (clothingToWear = "a heavy coat")
+  } console.log(clothingToWear)
+
+
 
 ////////// PROBLEM 5 //////////
 
@@ -49,6 +82,9 @@ let rain = true;
 */
 
 //CODE HERE
+for (let i = 0; i < 11.; i++) {
+  console.log("hello")
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -57,7 +93,9 @@ let rain = true;
 */
 
 //CODE HERE
-
+for (let i = 1; i < 11; i++) {
+  console.log(i)
+}
 ////////// PROBLEM 7 //////////
 
 /*
@@ -65,7 +103,8 @@ let rain = true;
 */
 
 //CODE HERE
-
+for (let i = 10; i > 0; i--) {
+  console.log(i)}
 
 ////////// PROBLEM 8 //////////
 
@@ -77,22 +116,34 @@ let passingScore = 7;
 */
 
 //CODE HERE
+while (score < passingScore) 
+{ console.log("your score is not high enough")
+score += 1
 
+  
+}
 ////////// INTERMEDIATE PROBLEMS //////////
 
 ////////// PROBLEM 9 //////////
 /*
   Create a variable called 'changeMyMind' and set it equal to true. 
-  Check to see if changeMyMind is set to true or false, if it is true, change the status to false, if it is false, change the status to true.
+  Check to see if changeMyMind is set to true or false, if it is true, 
+  change the status to false, if it is false, change the status to true.
 
 */
 
 //CODE HERE
-
+let changemymind = true
+if (changemymind === true) {
+  changemymind = false}
+else{ changemymind = true}
+console.log(changemymind)
 ////////// PROBLEM 10 //////////
 // Using the "not" operator (!), change the current value of changeMyMind to true (it should currently be set to false due to the if-else statement in Problem 9). After you change the value of changeMyMind, console.log it's new value (it should now read true).
 
 //CODE HERE
+changemymind = !changemymind
+console.log(changemymind)
 
 ////////// ADVANCED PROBLEMS //////////
 
@@ -102,3 +153,8 @@ let z = 5;
 // Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
 //CODE HERE
+
+while (z > 0) { z--}
+console.log(z)
+
+
